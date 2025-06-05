@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funny TikToks – Your Daily Laugh</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      text-align: center;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    .video-player iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .preview-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    .preview-gallery img {
+      width: 100%;
+      max-width: 200px;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    .preview-gallery img:hover {
+      transform: scale(1.05);
+    }
+    .cta {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #555;
+    }
+    .cta a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .cta a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>😂 Top TikToks of the Day</h1>
+
+    <!-- Main Video Player -->
+    <div class="video-player">
+      <iframe id="mainVideo" src="https://www.tiktok.com/embed/1234567890?autoplay=1&loop=1&mute=1" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+
+    <!-- Preview Gallery -->
+    <div class="preview-gallery">
+      <img src="https://via.placeholder.com/200x300?text=Video+1" alt="Video 1" onclick="changeVideo('https://www.tiktok.com/embed/1234567890?autoplay=1&loop=1&mute=1')">
+      <img src="https://via.placeholder.com/200x300?text=Video+2" alt="Video 2" onclick="changeVideo('https://www.tiktok.com/embed/0987654321?autoplay=1&loop=1&mute=1')">
+      <img src="https://via.placeholder.com/200x300?text=Video+3" alt="Video 3" onclick="changeVideo('https://www.tiktok.com/embed/1122334455?autoplay=1&loop=1&mute=1')">
+    </div>
+
+    <!-- Call to Action -->
+    <div class="cta">
+      Want more laughs? <a href="https://www.tiktok.com/@funnytiktok" target="_blank">Follow us on TikTok</a> for daily updates!
+    </div>
+  </div>
+
+  <script>
+    function changeVideo(url) {
+      document.getElementById('mainVideo').src = url;
+    }
+  </script>
+
+</body>
+</html>
